@@ -1,11 +1,15 @@
 # generator-meteor-stock
 
-A interactive Yeoman generator for Meteor projects.  Allows the user to:
+A interactive Yeoman generator for Meteor projects.  Allows the user to employ their own naming to create:
 
-* create custom-named vies (with html and js files)
-* create collections
-* create routes (for iron-router)
-* create a directory structure (for larger apps):
+* views (with html and js files)
+* collections (including a publication and subscription)
+* routes (for iron-router)
+
+Users can also:
+
+* add recommended .jshintrc and .editorconfig files (based on the Meteor style guide)
+* create useful directory structure:
 
 
 
