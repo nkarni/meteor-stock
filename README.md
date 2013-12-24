@@ -1,4 +1,4 @@
-# generator-meteor-stock
+# meteor-stock
 
 A interactive Yeoman generator for Meteor projects.  Allows the user to employ their own naming to create:
 
