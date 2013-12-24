@@ -2,10 +2,10 @@
 
 A interactive Yeoman generator for Meteor projects.  Allows the user to:
 
-* create custom-named vies (with html and js files),
-* create collections,
+* create custom-named vies (with html and js files)
+* create collections
 * create routes (for iron-router)
-*
+* create a directory structure (for larger apps)
 
 
 
