@@ -1,0 +1,42 @@
+{
+  "name": "generator-meteor-stock",
+  "version": "0.0.1",
+  "description": "A tool to generate Meteor files and directories",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/mattcarp/meteor-stock",
+  "bugs": "https://github.com/mattcarp/meteor-stock/issues",
+  "author": {
+    "name": "Matt Carpenter",
+    "email": "",
+    "url": "https://github.com/mattcarp"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattcarp/generator-meteor-stock.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0",
+    "fleck": ">=0.5.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
