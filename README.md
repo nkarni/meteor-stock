@@ -38,7 +38,7 @@ To install:
 
 To use:
 
-* Create a meteor app && CD to it's root
+* Create a meteor app && CD to its root
 * Run `yo meteor-stock`
 
 
