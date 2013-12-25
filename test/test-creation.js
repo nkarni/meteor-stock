@@ -22,12 +22,12 @@ describe('meteor-stock generator', function () {
     it('creates expected files', function (done) {
         var expected = [
             // add files you expect to exist here.
-            '.jshintrc',
-            '.editorconfig'
+            //'.jshintrc',
+            //'.editorconfig'
         ];
 
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            'initialPrompt': 'Create a view (html and js files)'
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {

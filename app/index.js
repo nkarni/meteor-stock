@@ -249,7 +249,6 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
 
       self.subscriptionFile = self.subscriptionFile.join('\n');
       self.write('client/subscriptions/' + self.underscoredName + '.js', self.subscriptionFile);
-
     }
 
     if (self.initialPrompt === prompts[0].choices[4]) {
