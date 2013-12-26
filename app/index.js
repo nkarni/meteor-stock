@@ -42,7 +42,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
     },
     {
       when: function (prevAns) {
-        // ask for confrmation if the user specified view directory creation
+        // ask for confrmation if the user specified directory creation
         return prevAns.initialPrompt === prompts[0].choices[0];
       },
       type: 'confirm',
@@ -173,9 +173,9 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
       self.viewHtml = self.viewHtml.join('\n');
 
       self.viewJs = [
-        'Template.name.' + self.viewName + '.rendered = function() {',
+        'Template.' + self.viewName + '.rendered = function() {',
         '  // things to do when the template is finished rendering',
-        '}',
+        '};',
         '',
         'Template.' + self.viewName + '.events({',
         '  //".my-button click": function() {',
@@ -196,9 +196,10 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
 
       var routeJs = [
         'Router.map(function () {',
-        '  self.route(' + self.routeName + ') {',
-        'path: "' + self.pathName + '"',
-        'template: "' + self.templateName + '"',
+        '  this.route("' + self.routeName + '", {',
+        '    path: "' + self.pathName + '",',
+        '    template: "' + self.templateName + '"',
+        '  });',
         '});'
       ];
       routeJs = routeJs.join('\n');
