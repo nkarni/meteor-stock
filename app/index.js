@@ -187,7 +187,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
 
       self.mkdir('client/views');
       self.write('client/views/' + self.underscoredName + '/' + self.underscoredName + '.html', self.viewHtml);
-      self.write('client/views/' + self.underscoredName + '/' + self.underscoredName + '.js', self.viewJs);
+      self.write('client/views/' + self.underscoredName + '/' + self.underscoredName + '_view.js', self.viewJs);
     }
 
     // user has chosen to create a route
@@ -205,7 +205,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
       routeJs = routeJs.join('\n');
 
       self.mkdir('client/routes');
-      self.write('client/routes/' + self.underscoredName + '.js', routeJs);
+      self.write('client/routes/' + self.underscoredName + '_route.js', routeJs);
     }
 
     // user has chosen to create a collection
@@ -243,13 +243,13 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
 
       // write files
       self.collectionFile = self.collectionFile.join('\n');
-      self.write('collections/' + self.underscoredName + '.js', self.collectionFile);
+      self.write('collections/' + self.underscoredName + '_collection.js', self.collectionFile);
 
       self.publicationFile = self.publicationFile.join('\n');
-      self.write('server/publications/' + self.underscoredName + '.js', self.publicationFile);
+      self.write('server/publications/' + self.underscoredName + '_pub.js', self.publicationFile);
 
       self.subscriptionFile = self.subscriptionFile.join('\n');
-      self.write('client/subscriptions/' + self.underscoredName + '.js', self.subscriptionFile);
+      self.write('client/subscriptions/' + self.underscoredName + '_sub.js', self.subscriptionFile);
     }
 
     if (self.initialPrompt === prompts[0].choices[4]) {
