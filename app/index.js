@@ -214,7 +214,8 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
       self.mkdir('client/subscriptions');
       self.mkdir('server/publications');
       self.underscoredName = fleck.underscore(self.collectionName);
-      self.collectionFile = [self.collectionName + ' = new Meteor.Collection(' + self.collectionName + ');',
+      self.camelName = fleck.camelize(self.collectionName);
+      self.collectionFile = [self.collectionName + ' = new Meteor.Collection("' + self.collectionName + '");',
             '',
             self.collectionName + '.allow({',
             '  insert : function () {',
@@ -233,12 +234,12 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
             '',
             '});'];
 
-      self.publicationFile = ['Meteor.publish(' + self.collectionName + ', function () {',
+      self.publicationFile = ['Meteor.publish("' + self.collectionName + '", function () {',
             '    return ' + self.collectionName + '.find();',
             '});',
             ''];
 
-      self.subscriptionFile = ['Meteor.subscribe(' + this.collectionName + ');',
+      self.subscriptionFile = ['Meteor.subscribe("' + this.collectionName + '");',
             ''];
 
       // write files
