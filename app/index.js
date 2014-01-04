@@ -67,7 +67,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
     }
 
     if (self.initialPrompt === prompts[0].choices[4]) {
-      this.copy("layout.html", "client/views/components/layout.js");
+      this.copy("layout.html", "client/views/components/layout.html");
     }
 
     if (self.initialPrompt === prompts[0].choices[5]) {

@@ -6,7 +6,7 @@ To install:
 
 To use:
 
-* Create a meteor app and CD to its root
+* Create a Meteor app and CD to its root
 * Run: `yo meteor-stock`
 
 What is meteor-stock?
