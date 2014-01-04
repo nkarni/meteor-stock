@@ -1,5 +1,16 @@
 # meteor-stock
 
+To install:
+
+     npm install -g meteor-stock
+
+To use:
+
+* Create a meteor app and CD to its root
+* Run: `yo meteor-stock`
+
+What is meteor-stock?
+
 A interactive Yeoman generator for Meteor projects.  Allows the user to employ their own naming to create:
 
 * views (with html and js files)
@@ -34,15 +45,6 @@ Users can also:
 ```
 
 meteor-stock will not automatically overwrite existing files or directories.  If it encouters a conflict, you will be asked whether or not to replace existing files.
-
-To install:
- 
-     npm install -g meteor-stock
-     
-To use:
-
-* Create a meteor app and CD to its root
-* Run: `yo meteor-stock`
 
 
 ## Credits

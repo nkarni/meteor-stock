@@ -1,0 +1,23 @@
+<template name="<%= featureName%>List">
+{{!-- table header here --}}
+    {{#each <%= _(featureName).camelize() %>s}}
+      {{> <%= <%= _(featureName).camelize() %>Item}}
+    {{/each}}
+{{!-- TODO table footer here --}}
+</template>
+
+<template name="<%= featureName%>Item">
+  <div>
+    <a href="#" class="upvote btn {{upvotedClass}}">⬆</a>
+    <div class="post-content">
+      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <p>
+        {{pluralize votes "Vote"}},
+        submitted by {{author}},
+        <a href="{{pathFor '<%= featureName%>Detail'}}">{{pluralize commentsCount "comment"}}</a>
+        {{#if ownPost}}<a href="{{pathFor '<%= featureName%>Edit'}}">Edit</a>{{/if}}
+      </p>
+    </div>
+    <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss</a>
+  </div>
+</template>
