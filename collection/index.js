@@ -27,14 +27,12 @@ CollectionGenerator.prototype.askFor = function askFor() {
     }
   ];
 
-
   this.prompt(prompts, function (props) {
     var self = this;
     self.collectionName = props.collectionName;
     // self.camelName = fleck.camelize(self.collectionName);
     self.confirmCollection = props.confirmCollection;
     self.underscoredName = fleck.underscore(self.collectionName);
-
 
     if (self.confirmCollection) {
       self.mkdir("collections");
@@ -43,7 +41,6 @@ CollectionGenerator.prototype.askFor = function askFor() {
       self.template("_collection.js", "collections/" + self.underscoredName + "_collection.js");
       self.template("_publication.js", "collections/" + self.underscoredName + "_publication.js");
       self.template("_subscription.js", "collections/" + self.underscoredName + "_subscription.js");
-
 
       console.log("Collection created.");
     }
