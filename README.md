@@ -1,5 +1,8 @@
 # meteor-stock
 
+>Civilisation advances by extending the number of important operations which we can perform without thinking about them.
+- Alfred North Whitehead
+
 To install:
 
      npm install -g meteor-stock
@@ -20,6 +23,7 @@ A interactive Yeoman generator for Meteor projects.  Allows the user to employ t
 Users can also:
 
 * add recommended .jshintrc and .editorconfig files (based on the Meteor style guide)
+* add an iron-router configuration file and compatible layout
 * create a [useful directory structure](http://http://www.slideshare.net/AkbarAhmed3/directory-structure-for-large-meteor-apps):
 
 

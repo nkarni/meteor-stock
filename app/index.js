@@ -38,7 +38,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
         "Create a layout file (for iron-router to yield templates)",
         "Create a collection (with a publication and subscription)",
         "Add Meteor .jshintrc and .editorconfig files",
-        // "Generate CRUD for a new feature",
+        "Generate CRUD for a new feature",
         "Exit"
       ],
       name: "initialPrompt",

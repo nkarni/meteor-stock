@@ -21,11 +21,19 @@ CrudGenerator.prototype.askFor = function askFor() {
       message: "Let's make some CRUD!\n" +
       "This will create routes, a collection (with a publication and subscription),\n" +
       "and views for: list, detail, new, and edit functionality.\n" +
-      "Enter the name of the feature you want to create (e.g. Post)\n"
+      "Enter the name of the feature you want to create.\n" +
+      "Hint: use a singular noun with Initial Caps (e.g. Post)"
+    },
+    {
+      type: "input",
+      name: "fields",
+      default: ["fieldA", "fieldB", "fieldC", "fieldD", "fieldE"],
+      message: "You can specify field names in a comma-separated list,\n" +
+      "or just hit enter to accept some default field names"
     },
     {
       type: "confirm",
-      name: "confirmfeature",
+      name: "confirmFeature",
       message: "Create CRUD for this feature?"
     }
   ];
@@ -33,36 +41,37 @@ CrudGenerator.prototype.askFor = function askFor() {
   this.prompt(prompts, function (props) {
     var self = this;
     self.featureName = props.featureName;
-    // self.camelName = fleck.camelize(self.featureName);
-    self.confirmfeature = props.confirmfeature;
-    self.underscoredName = fleck.underscore(self.featureName);
+    self.featureNameCamel = fleck.camelize(self.featureName);
+    self.featureNameUnder = fleck.underscore(self.featureName);
+    self.featureNameLower = self.featureName.toLowerCase();
+    self.confirmFeature = props.confirmFeature;
 
-    if (self.confirmfeature) {
-      self.mkdir("features");
+
+    if (self.confirmFeature) {
+      self.mkdir("client/routes");
       self.mkdir("client/subscriptions");
       self.mkdir("server/publications");
 
       // route
-      // TODO 4 routes in one file
-      self.template("_route.js", "features/" + self.underscoredName + "_route.js");
+      self.template("_route.js", "client/routes/" + self.featureNameUnder + "_routes.js");
 
       // collection
 
 
       // views
-      // self.template("_new.js", "features/" + self.underscoredName + "_new.html");
-      // self.template("_new.html", "features/" + self.underscoredName + "_new.js");
-      self.template("_list.js", "features/" + self.underscoredName + "_list.html");
-      self.template("_list.html", "features/" + self.underscoredName + "_list.js");
+      self.template("_new.html", "client/views/" + self.featureNameUnder + "/" + self.featureNameUnder + "_new.html");
+      self.template("_new.js", "client/views/" + self.featureNameUnder + "/" + self.featureNameUnder + "_new.js");
+      self.template("_list.html", "client/views/" + self.featureNameUnder + "/" + self.featureNameUnder + "_list.html");
+      self.template("_list.js", "client/views/" + self.featureNameUnder + "/" + self.featureNameUnder + "_list.js");
       // self.template("_edit.js", "features/" + self.underscoredName + "_edit.html");
       // self.template("_edit.html", "features/" + self.underscoredName + "_edit.js");
       // self.template("_detail.js", "features/" + self.underscoredName + "_detail.html");
       // self.template("_detail.html", "features/" + self.underscoredName + "_detail.js");
+      // TODO delete?
 
 
-
-
-      self.template("_subscription.js", "features/" + self.underscoredName + "_subscription.js");
+      self.template("_subscription.js", "client/subscriptions/" + self.featureNameUnder + "_subscription.js");
+      self.template("_publication.js", "server/publications/" + self.featureNameUnder + "_publication.js");
 
       console.log("feature created.");
     }

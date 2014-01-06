@@ -1,3 +1,3 @@
-Meteor.publish("collectionName", function () {
+Meteor.publish("<%= collectionName %>", function () {
     return <%= collectionName %>.find();
   });

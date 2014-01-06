@@ -1,27 +1,22 @@
+// Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock.  Edit me!
 Router.map(function () {
-  this.route("<%= featureName %>New", {
-    path: "<%= featureName %>/new",
-    template: "<%= featureName %>New"
+  this.route("<%= featureNameLower %>sList", {
+    path: "/"
   });
-});
-
-Router.map(function () {
-  this.route("<%= featureName %>List", {
-    path: "<%= featureName %>/list",
-    template: "<%= featureName %>List"
+  this.route("<%= featureNameLower %>New", {
+    path: "<%= featureNameLower %>/new",
+    template: "<%= featureNameLower %>New"
   });
-});
-
-Router.map(function () {
-  this.route("<%= featureName %>Edit", {
-    path: "<%= featureName %>/edit",
-    template: "<%= featureName %>Edit"
+  this.route("<%= featureNameLower %>sList", {
+    path: "<%= featureNameLower %>s/list",
+    template: "<%= featureNameLower %>List"
   });
-});
-
-Router.map(function () {
-  this.route("<%= featureName %>Detail", {
-    path: "<%= featureName %>/detail",
-    template: "<%= featureName %>Detail"
+  this.route("<%= featureNameLower %>Edit", {
+    path: "<%= featureNameLower %>/edit",
+    template: "<%= featureNameLower %>Edit"
+  });
+  this.route("<%= featureNameLower %>Detail", {
+    path: "<%= featureNameLower %>/detail",
+    template: "<%= featureNameLower %>Detail"
   });
 });

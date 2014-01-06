@@ -1,12 +1,14 @@
-<template name="<%= featureName%>List">
+<template name="<%= featureNameLower %>sList">
+<h1>A list of <%= featureName %>s</h1>
+
 {{!-- table header here --}}
-    {{#each <%= _(featureName).camelize() %>s}}
-      {{> <%= <%= _(featureName).camelize() %>Item}}
+    {{#each <%= featureNameLower %>s}}
+      {{> <%= featureNameLower %>Item}}
     {{/each}}
 {{!-- TODO table footer here --}}
 </template>
 
-<template name="<%= featureName%>Item">
+<template name="<%= featureNameLower %>Item">
   <div>
     <a href="#" class="upvote btn {{upvotedClass}}">⬆</a>
     <div class="post-content">
