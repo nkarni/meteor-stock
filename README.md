@@ -68,19 +68,25 @@ Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github
 10. Create CRUD: choose the menu item, enter a name (a singular noun with an initial cap is best  - e.g. Widget).
 11. Enter field names (optional).  These should be a comma-separated list of your starting fields (myFieldA, myFieldB).  You can skip this step and a few default fields will be added for yoo. You can edit these later.
 
-### Screenshots (for the user-defind feature 'Wabbit')
+## Screenshots (for the user-defined feature 'Wabbit')
 
-New
+### New Document:
+
+![image](https://s3.amazonaws.com/img_general/new.png)
+
+## List Documents:
+
+![image](https://s3.amazonaws.com/img_general/list.png)
 
 
-List
+## Document Details:
+
+![image](https://s3.amazonaws.com/img_general/detail.png)
 
 
-Detail
+## Edit Document:
 
-
-Edit
-
+![image](https://s3.amazonaws.com/img_general/edit.png)
 
 
 ### Credits
