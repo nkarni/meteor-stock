@@ -1,0 +1,203 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/mattcarp/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+12 verbose folder .
+13 info prepublish meteor-stock@0.0.5
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/mattcarp/.npm/1f1177db-tar.lock
+16 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+17 verbose lock tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz /Users/mattcarp/.npm/9eb4c945-21736-0-2684524483047426-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+21 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+22 verbose tar unpack /var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+23 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+24 verbose lock tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package /Users/mattcarp/.npm/21c4552f-21736-0-2684524483047426-package.lock
+25 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+26 verbose lock tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz /Users/mattcarp/.npm/9eb4c945-21736-0-2684524483047426-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry collection/index.js
+33 silly gunzTarPerm extractEntry collection/templates/_collection.js
+34 silly gunzTarPerm extractEntry collection/templates/_publication.js
+35 silly gunzTarPerm extractEntry collection/templates/_subscription.js
+36 silly gunzTarPerm extractEntry .editorconfig
+37 silly gunzTarPerm extractEntry .jshintrc
+38 silly gunzTarPerm extractEntry app/index.js
+39 silly gunzTarPerm extractEntry app/templates/router_config.js
+40 silly gunzTarPerm extractEntry app/templates/_bower.json
+41 silly gunzTarPerm extractEntry app/templates/_package.json
+42 silly gunzTarPerm extractEntry app/templates/editorconfig
+43 silly gunzTarPerm extractEntry app/templates/jshintrc
+44 silly gunzTarPerm extractEntry app/templates/layout.html
+45 silly gunzTarPerm extractEntry .gitattributes
+46 silly gunzTarPerm extractEntry crud/index.js
+47 silly gunzTarPerm extractEntry crud/templates/_collection.js
+48 silly gunzTarPerm extractEntry crud/templates/_detail.js
+49 silly gunzTarPerm extractEntry crud/templates/_routes.js
+50 silly gunzTarPerm extractEntry crud/templates/_edit.js
+51 silly gunzTarPerm extractEntry crud/templates/_publication.js
+52 silly gunzTarPerm extractEntry crud/templates/_new.js
+53 silly gunzTarPerm extractEntry crud/templates/_subscription.js
+54 silly gunzTarPerm extractEntry crud/templates/_list.js
+55 silly gunzTarPerm extractEntry crud/templates/_new.html
+56 silly gunzTarPerm extractEntry crud/templates/_detail.html
+57 silly gunzTarPerm extractEntry crud/templates/_list.html
+58 silly gunzTarPerm extractEntry crud/templates/_edit.html
+59 silly gunzTarPerm extractEntry test/test-creation.js
+60 silly gunzTarPerm extractEntry test/test-load.js
+61 silly gunzTarPerm extractEntry .travis.yml
+62 silly gunzTarPerm extractEntry route/index.js
+63 silly gunzTarPerm extractEntry route/templates/_route.js
+64 silly gunzTarPerm extractEntry structure/index.js
+65 silly gunzTarPerm extractEntry view/index.js
+66 silly gunzTarPerm extractEntry view/templates/_view.js
+67 silly gunzTarPerm extractEntry view/templates/_view.html
+68 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+69 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+70 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+71 silly lockFile 9eb4c945-21736-0-2684524483047426-tmp-tgz tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/tmp.tgz
+72 verbose tar pack [ '/Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz',
+72 verbose tar pack   '/var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package' ]
+73 verbose tarball /Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+74 verbose folder /var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+75 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+76 verbose lock tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package /Users/mattcarp/.npm/21c4552f-21736-0-2684524483047426-package.lock
+77 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+78 verbose lock tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz /Users/mattcarp/.npm/849043b9-m-meteor-stock-0-0-5-package-tgz.lock
+79 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+80 silly lockFile 21c4552f-21736-0-2684524483047426-package tar:///var/folders/58/ftrmjpm53fq9mkk51k1k0lzr0000gn/T/npm-44983-4kac4cgM/1389191821736-0.2684524483047426/package
+81 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+82 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+83 silly lockFile 7a36c430-p-npm-meteor-stock-0-0-5-package /Users/mattcarp/.npm/meteor-stock/0.0.5/package
+84 verbose lock /Users/mattcarp/.npm/meteor-stock/0.0.5/package /Users/mattcarp/.npm/7a36c430-p-npm-meteor-stock-0-0-5-package.lock
+85 silly lockFile 7a36c430-p-npm-meteor-stock-0-0-5-package /Users/mattcarp/.npm/meteor-stock/0.0.5/package
+86 silly lockFile 7a36c430-p-npm-meteor-stock-0-0-5-package /Users/mattcarp/.npm/meteor-stock/0.0.5/package
+87 verbose tar unpack /Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+88 silly lockFile 7e69e2d6-p-npm-meteor-stock-0-0-5-package tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package
+89 verbose lock tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package /Users/mattcarp/.npm/7e69e2d6-p-npm-meteor-stock-0-0-5-package.lock
+90 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+91 verbose lock tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz /Users/mattcarp/.npm/849043b9-m-meteor-stock-0-0-5-package-tgz.lock
+92 silly gunzTarPerm modes [ '755', '644' ]
+93 silly gunzTarPerm extractEntry package.json
+94 silly gunzTarPerm extractEntry .npmignore
+95 silly gunzTarPerm extractEntry README.md
+96 silly gunzTarPerm extractEntry LICENSE
+97 silly gunzTarPerm extractEntry app/index.js
+98 silly gunzTarPerm extractEntry app/templates/router_config.js
+99 silly gunzTarPerm extractEntry app/templates/_bower.json
+100 silly gunzTarPerm extractEntry app/templates/_package.json
+101 silly gunzTarPerm extractEntry app/templates/editorconfig
+102 silly gunzTarPerm extractEntry app/templates/jshintrc
+103 silly gunzTarPerm extractEntry app/templates/layout.html
+104 silly gunzTarPerm extractEntry .jshintrc
+105 silly gunzTarPerm extractEntry .editorconfig
+106 silly gunzTarPerm extractEntry .gitattributes
+107 silly gunzTarPerm extractEntry collection/index.js
+108 silly gunzTarPerm extractEntry collection/templates/_collection.js
+109 silly gunzTarPerm extractEntry collection/templates/_publication.js
+110 silly gunzTarPerm extractEntry collection/templates/_subscription.js
+111 silly gunzTarPerm extractEntry crud/index.js
+112 silly gunzTarPerm extractEntry crud/templates/_collection.js
+113 silly gunzTarPerm extractEntry crud/templates/_detail.js
+114 silly gunzTarPerm extractEntry crud/templates/_routes.js
+115 silly gunzTarPerm extractEntry crud/templates/_edit.js
+116 silly gunzTarPerm extractEntry crud/templates/_publication.js
+117 silly gunzTarPerm extractEntry crud/templates/_new.js
+118 silly gunzTarPerm extractEntry crud/templates/_subscription.js
+119 silly gunzTarPerm extractEntry crud/templates/_list.js
+120 silly gunzTarPerm extractEntry crud/templates/_new.html
+121 silly gunzTarPerm extractEntry crud/templates/_detail.html
+122 silly gunzTarPerm extractEntry crud/templates/_list.html
+123 silly gunzTarPerm extractEntry crud/templates/_edit.html
+124 silly gunzTarPerm extractEntry .travis.yml
+125 silly gunzTarPerm extractEntry route/index.js
+126 silly gunzTarPerm extractEntry route/templates/_route.js
+127 silly gunzTarPerm extractEntry structure/index.js
+128 silly gunzTarPerm extractEntry test/test-creation.js
+129 silly gunzTarPerm extractEntry test/test-load.js
+130 silly gunzTarPerm extractEntry view/index.js
+131 silly gunzTarPerm extractEntry view/templates/_view.js
+132 silly gunzTarPerm extractEntry view/templates/_view.html
+133 silly lockFile 7e69e2d6-p-npm-meteor-stock-0-0-5-package tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package
+134 silly lockFile 7e69e2d6-p-npm-meteor-stock-0-0-5-package tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package
+135 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+136 silly lockFile 849043b9-m-meteor-stock-0-0-5-package-tgz tar:///Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz
+137 verbose chmod /Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz 644
+138 verbose chown /Users/mattcarp/.npm/meteor-stock/0.0.5/package.tgz [ 501, 20 ]
+139 silly lockFile 3a52ce78- .
+140 silly lockFile 3a52ce78- .
+141 silly publish { name: 'meteor-stock',
+141 silly publish   version: '0.0.5',
+141 silly publish   description: 'An interactive tool to generate Meteor files and directories',
+141 silly publish   keywords: [ 'meteor, yeoman-generator, boilerplate, scaffolding' ],
+141 silly publish   homepage: 'https://github.com/mattcarp/meteor-stock',
+141 silly publish   bugs: { url: 'https://github.com/mattcarp/meteor-stock/issues' },
+141 silly publish   author: { name: 'Matt Carpenter', url: 'https://github.com/mattcarp' },
+141 silly publish   main: 'app/index.js',
+141 silly publish   repository:
+141 silly publish    { type: 'git',
+141 silly publish      url: 'git://github.com/mattcarp/meteor-stock.git' },
+141 silly publish   scripts: { test: 'mocha' },
+141 silly publish   dependencies: { 'yeoman-generator': '~0.14.0', fleck: '>=0.5.1' },
+141 silly publish   devDependencies: { mocha: '~1.14.0' },
+141 silly publish   peerDependencies: { yo: '>=1.0.0' },
+141 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+141 silly publish   licenses: [ { type: 'MIT' } ],
+141 silly publish   readme: '# meteor-stock\n\n**Civilisation advances by extending the number of important operations which we can perform without thinking about them.** --Alfred North Whitehead\n\n### What is meteor-stock?\n\nA interactive Yeoman generator for [Meteor](http://www.meteor.com) projects.\n\n### To install:\n\n     npm install -g meteor-stock\n\n### To use:\n\n* Create a Meteor app and CD to its root\n* Run: `yo meteor-stock`\n\nmeteor-stock allows you to employ your own naming to create:\n\n* Full CRUD (create, read, update and delete for a user-specificed feature name).  This includes routes, views (html and js), a collection, and a publication and subscription.  Views are created to list, view, edit, and create documents for the given feature (see screenshots).\n\nmeteor-stock can alse create individual items (wthout full CRUD):\n\n* views (with html and js files)\n* collections (including a publication and subscription)\n* routes (for iron-router)\n* recommended .jshintrc and .editorconfig files (based on the Meteor style guide)\n* an iron-router configuration file and compatible layout\n* a [useful directory structure](http://http://www.slideshare.net/AkbarAhmed3/directory-structure-for-large-meteor-apps):\n\n\n\n```\n    ├── client\n    │   ├── compatibility\n    │   ├── conf\n    │   ├── lib\n    │   ├── routes\n    │   ├── startup\n    │   ├── stylesheets\n    │   ├── subscriptions\n    │   └── views\n    ├── collections\n    ├── lib\n    ├── private\n    ├── public\n    └── server\n        ├── lib\n        ├── publications\n        └── startup\n```\n\nmeteor-stock will not automatically overwrite existing files or directories.  If it encouters a conflict, you will be asked whether or not to replace existing files.\n\n### Typical Workflow\n\nAssuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github.com/oortcloud/meteorite) installed on your system:\n\n1. Create a new Meteor app: `meteor create myApp`\n2. Reove Meteor\'s auto-generated `myApp.html`, `myApp.js`, and `myApp.css` in your app\'s root.\n3. Add iron-router (optional; only if you want routes): `mrt add iron-router`\n4. Add bootstrap-3 (optional; only if you want things to look pretty): `mrt add bootstrap-3`\n5. Install meteor-stock: `npm install -g meteor-stock`\n6. Run meteor-stock: `yo meteor-stock`\n7. Create a directory structure (optional; meteor-stock will create necessary paths if you install generate individual views, etc.): just choose the first menu item.\n8. Create a layout file for iron-router (so that your new views will be \'yielded\' into it): choose the appropriate menu item.\n9. Create an iron-router config file (so that i-r knows to use your layout file): choose menu item.\n10. Create CRUD: choose the menu item, enter a name (a singular noun with an initial cap is best  - e.g. Widget).\n11. Enter field names (optional).  These should be a comma-separated list of your starting fields (myFieldA, myFieldB).  You can skip this step and a few default fields will be added for yoo. You can edit these later.\n\n## Screenshots (for the user-defined feature \'Wabbit\')\n\n### New Document:\n\n![image](https://s3.amazonaws.com/img_general/new.png)\n\n## List Documents:\n\n![image](https://s3.amazonaws.com/img_general/list.png)\n\n\n## Document Details:\n\n![image](https://s3.amazonaws.com/img_general/detail.png)\n\n\n## Edit Document:\n\n![image](https://s3.amazonaws.com/img_general/edit.png)\n\n\n### Credits\n\n.jshintrc and .editorconfig file from [raix/Meteor-jshintrc](https://github.com/raix/Meteor-jshintrc).  Recommended directory structure from Akbar Ahmed: [Directory Structure for Large Meteor Apps](http://www.slideshare.net/AkbarAhmed3/directory-structure-for-large-meteor-apps).  File naming convention (and significant inspiration) from [Disover Meteor](https://www.discovermeteor.com/).\n\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n',
+141 silly publish   readmeFilename: 'README.md',
+141 silly publish   _id: 'meteor-stock@0.0.5',
+141 silly publish   dist: { shasum: '2540d15b3af6f261d7cdbb95db0bc5c6f15573dd' },
+141 silly publish   _from: '.' }
+142 verbose url raw meteor-stock
+143 verbose url resolving [ 'https://registry.npmjs.org/', './meteor-stock' ]
+144 verbose url resolved https://registry.npmjs.org/meteor-stock
+145 info trying registry request attempt 1 at 14:37:03
+146 http PUT https://registry.npmjs.org/meteor-stock
+147 http 409 https://registry.npmjs.org/meteor-stock
+148 verbose url raw meteor-stock
+149 verbose url resolving [ 'https://registry.npmjs.org/', './meteor-stock' ]
+150 verbose url resolved https://registry.npmjs.org/meteor-stock
+151 info trying registry request attempt 1 at 14:37:04
+152 http GET https://registry.npmjs.org/meteor-stock
+153 http 200 https://registry.npmjs.org/meteor-stock
+154 error publish fail Cannot publish over existing version.
+154 error publish fail Update the 'version' field in package.json and try again.
+154 error publish fail
+154 error publish fail If the previous version was published in error, see:
+154 error publish fail     npm help unpublish
+154 error publish fail
+154 error publish fail To automatically increment version numbers, see:
+154 error publish fail     npm help version
+155 error System Darwin 13.0.0
+156 error command "node" "/usr/local/bin/npm" "publish"
+157 error cwd /Users/mattcarp/Dropbox/generator-meteor-stock
+158 error node -v v0.10.24
+159 error npm -v 1.3.21
+160 error code EPUBLISHCONFLICT
+161 verbose exit [ 1, true ]
