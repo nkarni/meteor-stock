@@ -1,25 +1,31 @@
+<!-- Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock. Edit me! -->
 <template name="<%= featureNameLower %>sList">
-<h1>A list of <%= featureName %>s</h1>
-
-{{!-- table header here --}}
-    {{#each <%= featureNameLower %>s}}
-      {{> <%= featureNameLower %>Item}}
-    {{/each}}
-{{!-- TODO table footer here --}}
+  <div class="container">
+    <h2><%= featureName %>s List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <% _.each(fieldsArray, function(field) { %>
+            <th><%= _(field).humanize().titleize() %></th>
+          <% }); %>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each <%=featureNameLower%>s}}
+          {{> <%=featureNameLower%>Item}}
+        {{/each}}
+      </tbody>
+    </table>
+    <button class="btn btn-default new">New <%= featureName %></button>
+  </div>
 </template>
 
-<template name="<%= featureNameLower %>Item">
-  <div>
-    <a href="#" class="upvote btn {{upvotedClass}}">⬆</a>
-    <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-      <p>
-        {{pluralize votes "Vote"}},
-        submitted by {{author}},
-        <a href="{{pathFor '<%= featureName%>Detail'}}">{{pluralize commentsCount "comment"}}</a>
-        {{#if ownPost}}<a href="{{pathFor '<%= featureName%>Edit'}}">Edit</a>{{/if}}
-      </p>
-    </div>
-    <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss</a>
-  </div>
+<template name="<%=featureNameLower%>Item">
+  <tr>
+    <% _.each(fieldsArray, function(field) { %>
+      <td>{{ <%= field %> }}</td>
+    <% }); %>
+    <td><a href="{{pathFor "<%= featureNameLower %>Detail" _id=this._id}}">detail</a></td>
+  </tr>
 </template>

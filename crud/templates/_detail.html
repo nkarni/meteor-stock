@@ -1,0 +1,39 @@
+<!-- Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock. Edit me! -->
+<template name="<%= featureNameLower %>Detail">
+  <div class="container">
+
+{{#with <%= featureNameLower %>}}
+
+    <h2><%= featureName %> Details</h2>
+    <table class="table-bordered table-striped">
+      <tbody>
+        <tr>
+          <th class="col-md-3">Created</th>
+          <td class="col-md-9">{{created}}</td>
+        </tr>
+        {{#if updated }}
+        <tr>
+          <th class="col-md-3">Updated</th>
+          <td class="col-md-9">{{updated}}</td>
+        </tr>
+        {{/if}}
+
+
+
+        <% _.each(fieldsArray, function(field) { %>
+          <tr>
+            <th class="col-md-3"><%= _(field).humanize().titleize() %></th>
+            <td class="col-md-9">{{<%= field %>}}</td>
+          </tr>
+        <% }); %>
+
+      </tbody>
+    </table>
+    <hr>
+    <button type="button" class="btn btn-default edit-<%= featureNameLower %>">Edit this <%= featureName %></button>
+    <button type="button" class="btn btn-default list-<%= featureNameLower %>"><%= featureName %>s List</button>
+    {{else}}
+      There was no <%= featureNameLower %> found for that ID.
+    {{/with}}
+  </div>
+</template>

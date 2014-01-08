@@ -1,10 +1,13 @@
 // Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock.  Edit me!
-// Template.<%= featureNameCamel %>.helpers({
-//   funcName: function() {
-//     // do cool stuff
-//     });
-//   },
-//   func2Name: function(){
-//     // more cool stuff
-//   }
-// });
+Template.<%= featureNameLower %>sList.helpers({
+  <%= featureNameLower %>s: function() {
+      return <%= featureName %>s.find({}, {sort: {createdAt: -1}});
+  }
+});
+
+Template.<%= featureNameLower %>sList.events({
+  "click .new": function(e) {
+    e.preventDefault();
+    Router.go('<%= featureNameLower %>New');
+  }
+});

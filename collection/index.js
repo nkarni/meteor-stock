@@ -36,11 +36,12 @@ CollectionGenerator.prototype.askFor = function askFor() {
 
     if (self.confirmCollection) {
       self.mkdir("collections");
-      self.mkdir("client/subscriptions");
       self.mkdir("server/publications");
+      self.mkdir("client/subscriptions");
+
       self.template("_collection.js", "collections/" + self.underscoredName + "_collection.js");
-      self.template("_publication.js", "collections/" + self.underscoredName + "_publication.js");
-      self.template("_subscription.js", "collections/" + self.underscoredName + "_subscription.js");
+      self.template("_publication.js", "server/publications/" + self.underscoredName + "_publication.js");
+      self.template("_subscription.js", "client/subscriptions/" + self.underscoredName + "_subscription.js");
 
       console.log("Collection created.");
     }

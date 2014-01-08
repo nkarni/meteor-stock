@@ -1,7 +1,11 @@
 # meteor-stock
 
->Civilisation advances by extending the number of important operations which we can perform without thinking about them.
-- Alfred North Whitehead
+>>Civilisation advances by extending the number of important operations which we can perform without thinking about them.
+>> Alfred North Whitehead
+
+What is meteor-stock?
+
+A interactive Yeoman generator for Meteor projects.
 
 To install:
 
@@ -12,9 +16,7 @@ To use:
 * Create a Meteor app and CD to its root
 * Run: `yo meteor-stock`
 
-What is meteor-stock?
-
-A interactive Yeoman generator for Meteor projects.  Allows the user to employ their own naming to create:
+meteor-stock allows the user to employ their own naming to create:
 
 * views (with html and js files)
 * collections (including a publication and subscription)

@@ -1,5 +1,5 @@
 // Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock.  Edit me!
-<%= collectionName %>s = new Meteor.Collection("<%= collectionNameLower %>s");
+<%= featureName %>s = new Meteor.Collection("<%= featureNameLower %>s");
 
 // some security:
 // <%= featureName %>.allow({
