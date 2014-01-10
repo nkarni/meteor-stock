@@ -1,6 +1,6 @@
 # meteor-stock
 
-**Civilisation advances by extending the number of important operations which we can perform without thinking about them.** --Alfred North Whitehead
+*Civilisation advances by extending the number of important operations which we can perform without thinking about them.* --Alfred North Whitehead
 
 ### What is meteor-stock?
 
@@ -70,7 +70,7 @@ Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github
 
 ## Screenshots (for the user-defined feature 'Wabbit')
 
-### New Document:
+## New Document:
 
 ![image](https://s3.amazonaws.com/img_general/new.png)
 
