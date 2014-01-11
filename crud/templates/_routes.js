@@ -8,16 +8,16 @@ Router.map(function () {
     template: "<%= featureNameLower %>New"
   });
   this.route("<%= featureNameLower %>Edit", {
-    path: "/<%= featureNameLower %>/edit/:_id",
+    path: "/<%= featureNameLower %>/:_id/edit",
     template: "<%= featureNameLower %>Edit",
     data: function () {
       return {
-        <%= featureNameLower%>: <%= featureName %>s.findOne(this.params._id)
+        <%= featureNameLower %>: <%= featureName %>s.findOne(this.params._id)
       }
     }
   });
   this.route("<%= featureNameLower %>Detail", {
-    path: "/<%= featureNameLower %>/detail/:_id",
+    path: "/<%= featureNameLower %>/:_id/detail",
     template: "<%= featureNameLower %>Detail",
     data: function () {
       var detailData = <%= featureName %>s.findOne(this.params._id);
@@ -26,7 +26,7 @@ Router.map(function () {
         detailData.updated = new Date(detailData.updatedAt);
       }
       return {
-        <%= featureNameLower%>: detailData
+        <%= featureNameLower %>: detailData
       }
     }
   });

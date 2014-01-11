@@ -1,6 +1,6 @@
 # meteor-stock
 
-*Civilisation advances by extending the number of important operations which we can perform without thinking about them.* --Alfred North Whitehead
+*Civilisation advances by extending the number of important operations which we can perform without thinking about them.* -Alfred North Whitehead
 
 ### What is meteor-stock?
 
@@ -57,7 +57,7 @@ meteor-stock will not automatically overwrite existing files or directories.  If
 Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github.com/oortcloud/meteorite) installed on your system:
 
 1. Create a new Meteor app: `meteor create myApp`
-2. Reove Meteor's auto-generated `myApp.html`, `myApp.js`, and `myApp.css` in your app's root.
+2. Remove Meteor's auto-generated `myApp.html`, `myApp.js`, and `myApp.css` in your app's root.
 3. Add iron-router (optional; only if you want routes): `mrt add iron-router`
 4. Add bootstrap-3 (optional; only if you want things to look pretty): `mrt add bootstrap-3`
 5. Install meteor-stock: `npm install -g meteor-stock`
@@ -66,7 +66,7 @@ Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github
 8. Create a layout file for iron-router (so that your new views will be 'yielded' into it): choose the appropriate menu item.
 9. Create an iron-router config file (so that i-r knows to use your layout file): choose menu item.
 10. Create CRUD: choose the menu item, enter a name (a singular noun with an initial cap is best  - e.g. Widget).
-11. Enter field names (optional).  These should be a comma-separated list of your starting fields (myFieldA, myFieldB).  You can skip this step and a few default fields will be added for yoo. You can edit these later.
+11. Enter field names (optional).  These should be a comma-separated list of your starting fields (myFieldA, myFieldB).  You can skip this step and a few default fields will be added for you. You can edit these later.
 
 ## Screenshots (for the user-defined feature 'Wabbit')
 
