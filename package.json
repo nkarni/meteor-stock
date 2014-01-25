@@ -3,7 +3,7 @@
   "version": "0.0.8",
   "description": "An interactive tool to generate Meteor files and directories",
   "keywords": [
-    "meteor, yeoman-generator, boilerplate, scaffolding"
+    "meteor, yeoman, generator, boilerplate, scaffolding"
   ],
   "homepage": "https://github.com/mattcarp/meteor-stock",
   "bugs": "https://github.com/mattcarp/meteor-stock/issues",
