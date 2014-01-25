@@ -12,7 +12,7 @@ Router.map(function () {
     template: "<%= featureNameLower %>Edit",
     data: function () {
       return {
-        <%= featureNameLower %>: <%= featureName %>s.findOne({id: this.params._id})
+        <%= featureNameLower %>: <%= featureName %>s.findOne(this.params._id)
       };
     }
   });
@@ -21,7 +21,7 @@ Router.map(function () {
     template: "<%= featureNameLower %>Detail",
     data: function () {
       return {
-        <%= featureNameLower %>: <%= featureName %>s.find({id: this.params._id})
+        <%= featureNameLower %>: <%= featureName %>s.findOne(this.params._id)
       };
     }
   });

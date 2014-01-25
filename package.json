@@ -1,6 +1,6 @@
 {
   "name": "meteor-stock",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An interactive tool to generate Meteor files and directories",
   "keywords": [
     "meteor, yeoman-generator, boilerplate, scaffolding"

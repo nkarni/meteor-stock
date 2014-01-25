@@ -24,8 +24,8 @@
 <template name="<%=featureNameLower%>Item">
   <tr>
     <% _.each(fieldsArray, function(field) { %>
-      <td>{{ <%= field %> }}</td>
+      <td>{{<%= field %>}}</td>
     <% }); %>
-    <td><a href="{{pathFor "<%= featureNameLower %>Detail" _id=this._id}}">detail</a></td>
+    <td><a href="{{pathFor "<%= featureNameLower %>Detail"}}">detail</a></td>
   </tr>
 </template>

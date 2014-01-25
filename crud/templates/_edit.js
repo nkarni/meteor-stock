@@ -2,12 +2,12 @@
 Template.<%= featureNameLower %>Edit.events({
   "submit form": function(e) {
     e.preventDefault();
-    var currentId = this.<%= featureNameLower %>._id;
+    var currentId = this._id;
 
     var <%= featureNameLower %>Edits = {
-      <% _.each(fieldsArray, function(field) { %>
-        <%= field %>: $(e.target).find('[name=<%= field %>]').val(),
-      <% }); %>
+    <% _.each(fieldsArray, function(field) { %>
+      <%= field %>: $(e.target).find("[name=<%= field %>]").val(),
+    <% }); %>
     };
 
     Meteor.call("edit<%= featureName %>", <%= featureNameLower %>Edits, currentId, function(error, id) {
@@ -22,11 +22,11 @@ Template.<%= featureNameLower %>Edit.events({
     e.preventDefault();
 
     if (confirm("Delete this <%= featureName %>?")) {
-      var currentId = this.<%= featureNameLower %>._id;
+      var currentId = this._id;
       Meteor.call("delete<%= featureName %>", currentId, function(error, id) {
-        if (error)
+        if (error) {
           return alert(error.reason);
-
+        }
         Router.go("<%= featureNameLower %>sList");
       }
     )}
@@ -34,6 +34,6 @@ Template.<%= featureNameLower %>Edit.events({
 
   "click .cancel": function(e) {
     e.preventDefault();
-    Router.go('<%= featureNameLower %>sList');
+    Router.go("<%= featureNameLower %>sList");
   }
 });

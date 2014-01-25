@@ -1,9 +1,10 @@
 <!-- Generated on <%= (new Date).toISOString().split('T')[0] %> by meteor-stock. Edit me! -->
 <template name="<%= featureNameLower %>Edit">
     <div class="container">
+    {{#with <%= featureNameLower %>}}
     <h2>Edit <%= featureName %></h2>
       <form class="form-horizontal" role="form">
-      {{#with <%= featureNameLower %>}}
+
         <% _.each(fieldsArray, function(field) { %>
             <div class="form-group">
 
@@ -13,7 +14,7 @@
               </div>
             </div>
         <% }); %>
-      {{/with }}
+
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Save <%= featureName %></button>
@@ -21,6 +22,14 @@
             <button class="btn btn-default cancel">Cancel</button>
           </div>
         </div>
+    {{else}}
+          <h3>There was no <%= featureNameLower %> found for that ID.</h3>
+          <hr>
+          <button class="btn btn-default cancel">Back to the <%= featureNameLower %> List</button>
+    {{/with}}
+
+
+
       </form>
     </div>
 </template>

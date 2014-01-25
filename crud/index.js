@@ -27,7 +27,7 @@ CrudGenerator.prototype.askFor = function askFor() {
     {
       type: "input",
       name: "fields",
-      message: "You can specify field names in a comma-separated list,\n" +
+      message: "You can specify field names in a comma-separated list (camelCase is recommended),\n" +
       "(e.g. myField, fooName, barTitle) or just hit enter to accept some default field names"
     },
     {
