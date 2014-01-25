@@ -12,22 +12,17 @@ Router.map(function () {
     template: "<%= featureNameLower %>Edit",
     data: function () {
       return {
-        <%= featureNameLower %>: <%= featureName %>s.findOne(this.params._id)
-      }
+        <%= featureNameLower %>: <%= featureName %>s.findOne({id: this.params._id})
+      };
     }
   });
   this.route("<%= featureNameLower %>Detail", {
     path: "/<%= featureNameLower %>/:_id/detail",
     template: "<%= featureNameLower %>Detail",
     data: function () {
-      var detailData = <%= featureName %>s.findOne(this.params._id);
-      detailData.created = new Date(detailData.createdAt);
-      if (detailData.updatedAt) {
-        detailData.updated = new Date(detailData.updatedAt);
-      }
       return {
-        <%= featureNameLower %>: detailData
-      }
+        <%= featureNameLower %>: <%= featureName %>s.find({id: this.params._id})
+      };
     }
   });
 
