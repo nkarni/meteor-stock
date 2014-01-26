@@ -73,7 +73,7 @@ Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github
 
 * Create a layout file for iron-router (so that your new views will be 'yielded' into it).
 * Create an iron-router config file (so that i-r knows to use your layout file).
-* **Most Fun:** Create CRUD: choose the menu item, enter a name (a singular noun with an initial cap is best  - e.g. Widget).  Enter field names (optional). You can skip this step and a few default fields will be added for you.
+* **Most Fun:** Create CRUD: choose the menu item, enter a name (a singular noun with an initial cap is best  - e.g. Widget).  You can enter a list of field names, or skip this step and a few default fields will be added for you.
 
 ## Screenshots (for the user-defined feature 'Wabbit')
 
