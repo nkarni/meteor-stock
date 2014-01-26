@@ -19,7 +19,7 @@ meteor-stock allows you to employ your own naming to create:
 
 * Full CRUD (create, read, update and delete for a user-specificed feature name).  This includes routes, views (html and js), a collection, and a publication and subscription.  Views are created to list, view, edit, and create documents for the given feature (see screenshots).
 
-meteor-stock can alse create individual items (wthout full CRUD):
+meteor-stock can also create individual items (wthout full CRUD):
 
 * views (with html and js files)
 * collections (including a publication and subscription)
