@@ -50,11 +50,11 @@ meteor-stock can alse create individual items (wthout full CRUD):
         └── startup
 ```
 
-### Hierarchy of Opinion~~atedness~~
+### Hierarchy of Opinions
 
-meteor-stock is highly opionionated but forms none of its own.  Its code conventions start with the official Meteor Style Guide.  When that document doesn't express an opinion (such as in the case of file naming conventions), it goes with opinions from the the Discover Meteor Book/Microscope example.  When opinionas aren't forthcoming htere (such as with the use of single or double quotes) opinion, it defaults to the jQuery style guide (which has an opinion on [everything](http://contribute.jquery.org/style-guide/js/#quotes).  Ever.)
+meteor-stock is highly opionionated but forms none of its own.  Its code conventions start with the official Meteor Style Guide.  When that document doesn't express an opinion (such as in the case of file naming conventions), it goes with opinions from the the Discover Meteor Book/Microscope example.  When opinions aren't forthcoming there (such as with the use of single or double quotes), it defaults to the jQuery style guide (which has an opinion on [everything](http://contribute.jquery.org/style-guide/js/#quotes).  Ever.)
 
-###   Won't Muck With Your Existing Work
+### Won't Muck With Your Existing Work
 
 meteor-stock will not automatically overwrite existing files or directories.  If it encouters a conflict, you will be asked whether or not to replace existing files.
 
