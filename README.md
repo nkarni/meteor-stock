@@ -1,6 +1,6 @@
 # meteor-stock
 
-*Civilisation advances by extending the number of important operations which we can perform without thinking about them.* -Alfred North Whitehead
+<!-- *Civilisation advances by extending the number of important operations which we can perform without thinking about them.* -Alfred North Whitehead -->
 
 ### What is meteor-stock?
 
@@ -8,7 +8,7 @@ A interactive Yeoman generator for [Meteor](http://www.meteor.com) projects.
 
 ### To install:
 
-     npm install -g meteor-stock
+     npm install -g generator-meteor-stock
 
 ### To use:
 
@@ -50,6 +50,12 @@ meteor-stock can alse create individual items (wthout full CRUD):
         └── startup
 ```
 
+### Hierarchy of Opinion~~atedness~~
+
+meteor-stock is highly opionionated but forms none of its own.  Its code conventions start with the official Meteor Style Guide.  When that document doesn't express an opinion (such as in the case of file naming conventions), it goes with opinions from the the Discover Meteor Book/Microscope example.  When opinionas aren't forthcoming htere (such as with the use of single or double quotes) opinion, it defaults to the jQuery style guide (which has an opinion on [everything](http://contribute.jquery.org/style-guide/js/#quotes).  Ever.)
+
+###   Won't Muck With Your Existing Work
+
 meteor-stock will not automatically overwrite existing files or directories.  If it encouters a conflict, you will be asked whether or not to replace existing files.
 
 ### Typical Workflow
@@ -60,7 +66,7 @@ Assuming you have [Meteor](http://www.meteor.com) and [Meteorite](https://github
 2. Remove Meteor's auto-generated `myApp.html`, `myApp.js`, and `myApp.css` in your app's root.
 3. Add iron-router (optional; only if you want routes): `mrt add iron-router`
 4. Add bootstrap-3 (optional; only if you want things to look pretty): `mrt add bootstrap-3`
-5. Install meteor-stock: `npm install -g meteor-stock`
+5. Install meteor-stock: `npm install -g generator-meteor-stock`
 6. Run meteor-stock: `yo meteor-stock`
 7. Create a directory structure (optional; meteor-stock will create necessary paths if you install generate individual views, etc.): just choose the first menu item.
 8. Create a layout file for iron-router (so that your new views will be 'yielded' into it): choose the appropriate menu item.
