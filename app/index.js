@@ -22,7 +22,7 @@ MeteorStockGenerator.prototype.askFor = function askFor() {
   // console.log(this.yeoman);
   console.log(
   "----------------------------------------------\n" +
-  "     * * * * * * Meter-Stock * * * * * * *    \n" +
+  "     * * * * * * Meter-Stock * * * * * *    \n" +
   "----------------------------------------------\n" +
   "\n" +
   "Run this utility from your Meteor app\'s root directory.\n");
