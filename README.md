@@ -52,7 +52,7 @@ meteor-stock can also create individual items (wthout full CRUD):
 
 ### Hierarchy of Opinions
 
-meteor-stock is highly opionionated but forms none of its own.  Its code conventions start with the official Meteor Style Guide.  When that document doesn't express an opinion (such as in the case of file naming conventions), it goes with opinions from the the Discover Meteor Book/Microscope example.  When opinions aren't forthcoming there (such as with the use of single or double quotes), it defaults to the jQuery style guide (which has an opinion on [everything](http://contribute.jquery.org/style-guide/js/#quotes).  Ever.)
+meteor-stock is highly opionated but forms none of its own.  Its code conventions start with the official Meteor Style Guide.  When that document doesn't express an opinion (such as in the case of file naming conventions), it goes with opinions from the the Discover Meteor Book/Microscope example.  When opinions aren't forthcoming there (such as with the use of single or double quotes), it defaults to the jQuery style guide (which has an opinion on [everything](http://contribute.jquery.org/style-guide/js/#quotes).  Ever.)
 
 ### Won't Muck With Your Existing Work
 
